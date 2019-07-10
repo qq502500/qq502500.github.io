@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=11,IE=10,IE=9,IE=8">
     <meta name="baidu-site-verification" content="dIcXMeY8Ya">
     
-    <title>文章标题 | 心情随笔</title>
+    <title>心情随笔</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta name="keywords" content="前端, Web, 前端开发">
     <meta name="description" content="个人前端小站">
@@ -56,15 +56,15 @@
         <div class="dropnav icon-paragraph-justify" id="JELON__btnDropNav"></div>
         <ul class="menu hidden" id="JELON__menu">
             
-            <li rel="/Web技术/生活琐事/my-new-post.html" class="item ">
+            <li rel="/uncategorized/小微程序开发流程.html" class="item ">
                 <a href="/" title="首页" class="icon-home">&nbsp;首页</a>
             </li>
             
-            <li rel="/Web技术/生活琐事/my-new-post.html" class="item ">
+            <li rel="/uncategorized/小微程序开发流程.html" class="item ">
                 <a href="/about/" title="关于" class="icon-about">&nbsp;关于</a>
             </li>
             
-            <li rel="/Web技术/生活琐事/my-new-post.html" class="item ">
+            <li rel="/uncategorized/小微程序开发流程.html" class="item ">
                 <a href="/comment/" title="留言" class="icon-comment">&nbsp;留言</a>
             </li>
             
@@ -115,29 +115,32 @@
 <!-- 文章 -->
 <article class="post article">
     <header class="text-center">
-        <h3 class="post-title"><span>文章标题</span></h3>
+        <h3 class="post-title"><span></span></h3>
     </header>
     <p class="post-meta text-center">
         Jelon 发表于
-        <time datetime="2019-06-05T14:14:59.000Z">2019-06-05</time>
+        <time datetime="2019-07-10T13:16:42.000Z">2019-07-10</time>
     </p>
     <div class="post-content">
-        <p>这里是文章正文内容<br>…</p>
-<p>这部分是文章摘要，这部分是文章摘要。在hexo模版里可通过 &lt;%- post.blogexcerpt || post.excerpt || post.content %&gt; 来引用。</p>
-<p>post.blogexcerpt：自定义摘要<br>post.excerpt：通过<a id="more"></a>分隔符来获取的文章摘要<br>post.content：如不设置摘要情况，则直接输出文章全部内容</p>
+        <h1 id="小微项目快速开发步骤："><a href="#小微项目快速开发步骤：" class="headerlink" title="小微项目快速开发步骤："></a>小微项目快速开发步骤：</h1><p>##系 统的需求分析常见操作步骤：</p>
+<ul>
+<li>1、记录用户零散的想法</li>
+<li>2、询问用户的整体业务流程</li>
+<li>3、根据记录及业务，整理业务需求【非程序员版，是让用户看的。比如：用户点击会员中心，进入到资料页面，如果用户没有绑定手机号，弹出请绑定手机号…】<br><strong>业务需求一般是文字描述，但是也要按照 A、B、C、D来列好，让客户确认。</strong></li>
+<li>4、根据业务需求，写程序员版需求，主要是功能描述，模块划分、注意事项。</li>
+<li>5、设计数据库字典，注意标记关联字段</li>
+<li>6、开始选定框架，进行登录、退出、管理员注册、日志、菜单、权限设定的开发。</li>
+<li>7、开始业务流程开发，测试完毕后，进行权限分配。</li>
+</ul>
 
     </div>
     <p class="post-meta">
         <span class="post-cat">分类：
-            <a class="cat-link" href="/categories/Web技术/">Web技术</a>|<a class="cat-link" href="/categories/Web技术/生活琐事/">生活琐事</a>
+            
         </span>
         <span class="post-tags">
             标签：
             
-    
-        <a href="/tags/琐事/" title="琐事">琐事</a>
-    
-
         </span>
     </p>
 </article>
@@ -161,20 +164,16 @@
     
     <span class="prev fl">
         上一篇<br>
-        <a href="/uncategorized/小微程序开发流程.html">
-            
-                无标题
-            
-        </a>
+        <a href="javascript: void(0);">没有上一篇了</a>
     </span>
     
 
     
     <span class="next fr">
         下一篇<br>
-        <a href="/Web技术123/hello-world.html">
+        <a href="/Web技术/生活琐事/my-new-post.html">
             
-                Hello World
+                文章标题
             
         </a>
     </span>
@@ -251,7 +250,7 @@
   <script>
   JELON.Comment({
     container: 'comments',
-    label: 'my-new-post' || 'Web技术/生活琐事/my-new-post.html',
+    label: '小微程序开发流程' || 'uncategorized/小微程序开发流程.html',
     owner: 'your_github_id',
     repo: 'your_blog_comments',
     clientId: 'your_client_id',
