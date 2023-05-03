@@ -17,7 +17,7 @@
     <link rel="icon" href="/favicon.ico" >
     
     
-<link rel="stylesheet" href="/css/style.css?v=1683124264680.css">
+<link rel="stylesheet" href="/css/style.css?v=1683124645645.css">
 
     <!--[if lt IE 9]>
     
@@ -119,6 +119,83 @@
             
         </strong>
     </h3>
+    
+        <!-- 文章列表 item -->
+<article class="post">
+    <header>
+        <!-- 标签这有且只能显示一个 -->
+        
+            <a href="javascript: void(0);" class="cat">未分类</a>
+        
+        <!-- 文章标题 -->
+        
+    </header>
+    <p class="post-meta">
+        Jelon 发表于
+        <time datetime="2023-05-03T14:37:04.935Z">2023-05-03</time>
+        &nbsp;&nbsp;
+        <span class="post-tags">
+            标签：
+            
+        </span>
+    </p>
+
+    <div class="post-content">
+        <div class="post-excerpt">
+            
+                <h3 id="1、群晖作为家庭NAS的扛把子，功能体验都非常好，从网上找了一篇关于最新版本的安装教程（参考链接：https-wp-gxnas-com-12245-html），下面记录一下个人的安装过程。"><a href="#1、群晖作为家庭NAS的扛把子，功能体验都非常好，从网上找了一篇关于最新版本的安装教程（参考链接：https-wp-gxnas-com-12245-html），下面记录一下个人的安装过程。" class="headerlink" title="1、群晖作为家庭NAS的扛把子，功能体验都非常好，从网上找了一篇关于最新版本的安装教程（参考链接：https://wp.gxnas.com/12245.html），下面记录一下个人的安装过程。"></a>1、群晖作为家庭NAS的扛把子，功能体验都非常好，从网上找了一篇关于最新版本的安装教程（参考链接：<a target="_blank" rel="noopener" href="https://wp.gxnas.com/12245.html%EF%BC%89%EF%BC%8C%E4%B8%8B%E9%9D%A2%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8B%E4%B8%AA%E4%BA%BA%E7%9A%84%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B%E3%80%82">https://wp.gxnas.com/12245.html），下面记录一下个人的安装过程。</a></h3><p>从github上下载引导编译文件，（<a target="_blank" rel="noopener" href="https://github.com/fbelavenuto/arpl/releases%EF%BC%89**%E6%8E%A8%E8%8D%90%E4%BD%BF%E7%94%A81.6%E7%89%88%E6%9C%AC**%EF%BC%8C1.7%E7%89%88%E6%9C%AC%E5%AD%98%E5%9C%A8bug%E3%80%82">https://github.com/fbelavenuto/arpl/releases）**推荐使用1.6版本**，1.7版本存在bug。</a></p>
+<p>因为我们是在VMware环境中模拟群晖的安装，所以选择下载 arpl-1.0-beta6.vmdk-flat.zip文件，如果计划在物理设备上安装需要下载“arpl-1.0-beta6.img.zip”文件。如果不想用最新版本的，也可以下载其他历史版本使用。</p>
+<p><img src="https://pics1.baidu.com/feed/c75c10385343fbf262d609e6209da38b67388f68.png@f_auto?token=dc1b84e90a3f690742737f50568e0f13"></p>
+<h3 id="2、-解压该文件，获取arpl-vmdk和arpl-flat-vmdk两个文件"><a href="#2、-解压该文件，获取arpl-vmdk和arpl-flat-vmdk两个文件" class="headerlink" title="2、 解压该文件，获取arpl.vmdk和arpl-flat.vmdk两个文件"></a>2、 解压该文件，获取arpl.vmdk和arpl-flat.vmdk两个文件</h3><p><img src="https://pics4.baidu.com/feed/c83d70cf3bc79f3dc448578e2c42a41a708b29d5.jpeg@f_auto?token=727a4736c6c7d46bf08740c12bd7af0e"></p>
+<h3 id="3、-在VMware-vSphere中创建虚拟机，操作系统选择Ubuntu-64位"><a href="#3、-在VMware-vSphere中创建虚拟机，操作系统选择Ubuntu-64位" class="headerlink" title="3、 在VMware vSphere中创建虚拟机，操作系统选择Ubuntu 64位"></a>3、 在VMware vSphere中创建虚拟机，操作系统选择Ubuntu 64位</h3><p><img src="https://pics2.baidu.com/feed/8694a4c27d1ed21bd16bf677338db4cf53da3ff5.png@f_auto?token=0f77b58ad2e5ad0fa94a80cafbcc5457"></p>
+<h3 id="4、-配置规格可参考如下图，注意自带的DVD和硬盘都全部删除，点击下一步完成虚拟机的创建。"><a href="#4、-配置规格可参考如下图，注意自带的DVD和硬盘都全部删除，点击下一步完成虚拟机的创建。" class="headerlink" title="4、 配置规格可参考如下图，注意自带的DVD和硬盘都全部删除，点击下一步完成虚拟机的创建。"></a>4、 配置规格可参考如下图，注意自带的DVD和硬盘都全部删除，点击下一步完成虚拟机的创建。</h3><p><img src="https://pics5.baidu.com/feed/f3d3572c11dfa9ecdecfbb5cf6339e08938fc183.png@f_auto?token=a13902aaa9671e3053741158c214ad35"></p>
+<h3 id="5、-将下载好的引导文件（连个vmdk文件，一定要都上传）上传至虚拟机的文件夹"><a href="#5、-将下载好的引导文件（连个vmdk文件，一定要都上传）上传至虚拟机的文件夹" class="headerlink" title="5、 将下载好的引导文件（连个vmdk文件，一定要都上传）上传至虚拟机的文件夹"></a>5、 将下载好的引导文件（连个vmdk文件，一定要都上传）上传至虚拟机的文件夹</h3><p>如果存储采用的是vSAN，将会报如下问题，建议使用ESXi上传，或者上传到ESXi本地磁盘。</p>
+<p><img src="https://pics6.baidu.com/feed/e7cd7b899e510fb39e5214de4fd0a19ed0430c1a.png@f_auto?token=39a6d7dba170ee786efde7013901dcef"></p>
+<p><img src="https://pics4.baidu.com/feed/f9198618367adab4a31b39e42e37da178501e4b9.png@f_auto?token=f4a9e182a5039f8e4b66d264e1f8ca6d"></p>
+<h3 id="6、-编辑刚创建的虚拟机，选择现有磁盘，选择上传的arpl-vmdk文件"><a href="#6、-编辑刚创建的虚拟机，选择现有磁盘，选择上传的arpl-vmdk文件" class="headerlink" title="6、 编辑刚创建的虚拟机，选择现有磁盘，选择上传的arpl.vmdk文件"></a>6、 编辑刚创建的虚拟机，选择现有磁盘，选择上传的arpl.vmdk文件</h3><p><img src="https://pics7.baidu.com/feed/11385343fbf2b211c7d6a2265f630c330ed78ec8.png@f_auto?token=79860066a7af55dde06fbb5d13384883"></p>
+<h3 id="7、-注意，挂载磁盘后，需要将控制器改为SATA控制器，如下所示"><a href="#7、-注意，挂载磁盘后，需要将控制器改为SATA控制器，如下所示" class="headerlink" title="7、 注意，挂载磁盘后，需要将控制器改为SATA控制器，如下所示"></a>7、 注意，挂载磁盘后，需要将控制器改为SATA控制器，如下所示</h3><p><img src="https://pics3.baidu.com/feed/d439b6003af33a87cd0e193862bf79335243b59b.png@f_auto?token=0036ebd60a92f6e78e14587a7339f3ea"></p>
+<h3 id="8、-添加数据盘，同样也选择SATA控制器，数据盘大小和数量可以根据自己实际需求添加"><a href="#8、-添加数据盘，同样也选择SATA控制器，数据盘大小和数量可以根据自己实际需求添加" class="headerlink" title="8、 添加数据盘，同样也选择SATA控制器，数据盘大小和数量可以根据自己实际需求添加"></a>8、 添加数据盘，同样也选择SATA控制器，数据盘大小和数量可以根据自己实际需求添加</h3><p><img src="https://pics5.baidu.com/feed/9358d109b3de9c82b794868ce262e90118d8432a.png@f_auto?token=1d0e8305ff9e7ade5b12d262ae092335"></p>
+<h3 id="9、-开机，等待引导文件自动执行，注意，一定要在网络环境中部署DHCP服务，否则系统会报无法获取IP错误，进到如下图界面则表示已经完成三分一之一的工作。"><a href="#9、-开机，等待引导文件自动执行，注意，一定要在网络环境中部署DHCP服务，否则系统会报无法获取IP错误，进到如下图界面则表示已经完成三分一之一的工作。" class="headerlink" title="9、 开机，等待引导文件自动执行，注意，一定要在网络环境中部署DHCP服务，否则系统会报无法获取IP错误，进到如下图界面则表示已经完成三分一之一的工作。"></a>9、 开机，等待引导文件自动执行，注意，一定要在网络环境中部署DHCP服务，否则系统会报无法获取IP错误，进到如下图界面则表示已经完成三分一之一的工作。</h3><p><img src="https://pics5.baidu.com/feed/d52a2834349b033bd41877408a2d5fd8d739bd83.png@f_auto?token=5fdf62501aa562af07907b4d436717cc"></p>
+<h3 id="10、-打开浏览器，输入页面提示的地址及端口，进入引导编译页面。"><a href="#10、-打开浏览器，输入页面提示的地址及端口，进入引导编译页面。" class="headerlink" title="10、 打开浏览器，输入页面提示的地址及端口，进入引导编译页面。"></a>10、 打开浏览器，输入页面提示的地址及端口，进入引导编译页面。</h3><p><img src="https://pics3.baidu.com/feed/fcfaaf51f3deb48f3d16703764fc53222ff578cf.png@f_auto?token=6876b1d425c8d6489d210e62beb1f293"></p>
+<h3 id="11、-选择”Choose-a-model-”-选择一个我们需要模拟的设备型号，根据自己CPU的型号选择对应的版本即可，我这里选择“DS-3617xs”"><a href="#11、-选择”Choose-a-model-”-选择一个我们需要模拟的设备型号，根据自己CPU的型号选择对应的版本即可，我这里选择“DS-3617xs”" class="headerlink" title="11、 选择”Choose a model ”,选择一个我们需要模拟的设备型号，根据自己CPU的型号选择对应的版本即可，我这里选择“DS 3617xs”"></a>11、 选择”Choose a model ”,选择一个我们需要模拟的设备型号，根据自己CPU的型号选择对应的版本即可，我这里选择“DS 3617xs”</h3><p><img src="https://pics0.baidu.com/feed/0ff41bd5ad6eddc4ff70aeeba838dff65366337d.png@f_auto?token=12e43c20acf8358cc13327f17bec44fa"></p>
+<h3 id="12、-选择“Choose-a-Build-Number”-选择我们想要安装的操作系统版本，“42962”是最新版本，回车，选择该版本。"><a href="#12、-选择“Choose-a-Build-Number”-选择我们想要安装的操作系统版本，“42962”是最新版本，回车，选择该版本。" class="headerlink" title="12、 选择“Choose a Build Number”,选择我们想要安装的操作系统版本，“42962”是最新版本，回车，选择该版本。"></a>12、 选择“Choose a Build Number”,选择我们想要安装的操作系统版本，“42962”是最新版本，回车，选择该版本。</h3><p><img src="https://pics4.baidu.com/feed/810a19d8bc3eb135b0ceb62828fdc1d8fc1f4402.png@f_auto?token=d934d341d3ce169ca7fca7b04abbb87f"></p>
+<h3 id="13、-选择“Choose-a-serial-number”，选择第一个“Generate-a-random-serial-number”"><a href="#13、-选择“Choose-a-serial-number”，选择第一个“Generate-a-random-serial-number”" class="headerlink" title="13、 选择“Choose a serial number”，选择第一个“Generate a random serial number”"></a>13、 选择“Choose a serial number”，选择第一个“Generate a random serial number”</h3><p><img src="https://pics3.baidu.com/feed/cc11728b4710b91288deb8e1671e950893452284.png@f_auto?token=c11af7d1ee81157b23fec1c93fcba35d"></p>
+<h3 id="14、-如果是在物理设备上且CPU的型号为10代以上的，可以通过“Addons”添加核显驱动"><a href="#14、-如果是在物理设备上且CPU的型号为10代以上的，可以通过“Addons”添加核显驱动" class="headerlink" title="14、 如果是在物理设备上且CPU的型号为10代以上的，可以通过“Addons”添加核显驱动"></a>14、 如果是在物理设备上且CPU的型号为10代以上的，可以通过“Addons”添加核显驱动</h3><p><img src="https://pics7.baidu.com/feed/03087bf40ad162d9c032a28f843cc0e78813cdb0.png@f_auto?token=b1362efe9c5f2762aeffecd04c911045"></p>
+<h3 id="15、-我们直接跳过上一条，选择“Build-the-loader”编译引导文件"><a href="#15、-我们直接跳过上一条，选择“Build-the-loader”编译引导文件" class="headerlink" title="15、 我们直接跳过上一条，选择“Build the loader”编译引导文件"></a>15、 我们直接跳过上一条，选择“Build the loader”编译引导文件</h3><p><img src="https://pics3.baidu.com/feed/ca1349540923dd54f18a6c7445eadad59d824824.png@f_auto?token=9aab95dad8fd4c964f1c43e2acc0f327"></p>
+<p><img src="https://pics1.baidu.com/feed/91529822720e0cf351deb85584a59b14bf09aa66.png@f_auto?token=a7718f2fadbb46f4a4cff5417f7fd202"></p>
+<p><img src="https://pics5.baidu.com/feed/8326cffc1e178a820469016467e01a86ab77e888.png@f_auto?token=405044829cc7d30fba3476fb99bbeb43"></p>
+<p><img src="https://pics3.baidu.com/feed/0d338744ebf81a4c7792e92b5ac90952272da69a.png@f_auto?token=016781da54ed1b1c821ee4fcec79b5bd"></p>
+<p><img src="https://pics7.baidu.com/feed/0dd7912397dda144353a8f302754b9a90df48674.png@f_auto?token=54150244331be58e87ae5840cbb12079"></p>
+<h3 id="16、-新建浏览器窗口，输入虚拟机的地址（http-ip-5000），进入群晖的配置页面，点击安装"><a href="#16、-新建浏览器窗口，输入虚拟机的地址（http-ip-5000），进入群晖的配置页面，点击安装" class="headerlink" title="16、 新建浏览器窗口，输入虚拟机的地址（http://ip:5000），进入群晖的配置页面，点击安装"></a>16、 新建浏览器窗口，输入虚拟机的地址（<a href="http://ip:5000），进入群晖的配置页面，点击安装">http://ip:5000），进入群晖的配置页面，点击安装</a></h3><p><img src="https://pics4.baidu.com/feed/2e2eb9389b504fc2f5fce37d733e8e1a91ef6d11.png@f_auto?token=c428c8f0e9bd1d4736dab97e6196bfb6"></p>
+<h3 id="17、-选择Synology-下载中心，进入群晖官方下载页面"><a href="#17、-选择Synology-下载中心，进入群晖官方下载页面" class="headerlink" title="17、 选择Synology 下载中心，进入群晖官方下载页面"></a>17、 选择Synology 下载中心，进入群晖官方下载页面</h3><p><img src="https://pics1.baidu.com/feed/960a304e251f95cad4091ca546f4163566095217.png@f_auto?token=f5014ef217f4acf7b5982deac1aeb836"></p>
+<p><img src="https://pics7.baidu.com/feed/2cf5e0fe9925bc31cb10320cca3ce4bac91370c7.png@f_auto?token=86a866b57698e8fc37349ad1c8f365c2"></p>
+<h3 id="18、下载完成后，回到群晖安装页面，点击浏览，上传刚下载的系统包"><a href="#18、下载完成后，回到群晖安装页面，点击浏览，上传刚下载的系统包" class="headerlink" title="18、下载完成后，回到群晖安装页面，点击浏览，上传刚下载的系统包"></a>18、下载完成后，回到群晖安装页面，点击浏览，上传刚下载的系统包</h3><p><img src="https://pics7.baidu.com/feed/6a63f6246b600c331b1a407983af3804d8f9a10b.png@f_auto?token=fcca53b495eef9eef0225b4172bf473f"></p>
+<p><img src="https://pics0.baidu.com/feed/c8ea15ce36d3d539518f4fccaf64805b342ab07a.png@f_auto?token=bc59328f361973751ac51f2327d9cc15"></p>
+<p><img src="https://pics0.baidu.com/feed/4034970a304e251f792a1f643365a01c7d3e53b8.png@f_auto?token=f644cd2478fd11d6a47c38b2eea4ae6a"></p>
+<p><img src="https://pics0.baidu.com/feed/c2cec3fdfc0392458d44ae320877cdc97c1e250c.png@f_auto?token=984eb2c58f28de8a877a189f7e33a4b5"></p>
+<p><img src="https://pics7.baidu.com/feed/5ab5c9ea15ce36d3570a5672b410538ce850b151.png@f_auto?token=1238bb0a1580afbc9917a3b372a1b68c"></p>
+<p><img src="https://pics1.baidu.com/feed/94cad1c8a786c91709d928f844de19c439c75703.png@f_auto?token=2556dd142dd175657fc21149c117a2d5"></p>
+<p><img src="https://pics6.baidu.com/feed/c8177f3e6709c93d6e489c790fde91d7d30054f0.png@f_auto?token=7d7bbdf3da0db884ac997267ebfa157e"></p>
+<p><img src="https://pics2.baidu.com/feed/95eef01f3a292df5a3fbc7e531d2356b35a87370.png@f_auto?token=8e828d6c53bb751579346c57419b3a2d"></p>
+<p><img src="https://pics3.baidu.com/feed/d1a20cf431adcbef42210967384c47d6a2cc9fac.png@f_auto?token=0f534d914c75b34028de5c966fef8c13"></p>
+<p><img src="https://pics4.baidu.com/feed/b21c8701a18b87d63c4562f392eb41331d30fdc2.png@f_auto?token=4455ad1977cf37d6de8a72c38f4bb11f"></p>
+<p><img src="https://pics3.baidu.com/feed/34fae6cd7b899e51800851c6cd44b038ca950d48.png@f_auto?token=57a2ec3b3589b57b1aabd3af6f53cd19"></p>
+
+            
+            <p class="more">
+                <a href="https://www.ymin.xyz/2023/05/03/%E7%BE%A4%E6%99%967.1.1%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC%20%E4%BD%BF%E7%94%A8ESXi%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">阅读剩下更多</a>
+            </p>
+        </div>
+        <div class="post-thumbnail" data-img="">
+            <a href="https://www.ymin.xyz/2023/05/03/%E7%BE%A4%E6%99%967.1.1%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC%20%E4%BD%BF%E7%94%A8ESXi%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" title="">
+                
+                    <img class="thumbnail" src="/img/default.png" data-echo="/img/thumbnail/3.jpg" alt="默认配图" >
+                
+            </a>
+        </div>
+    </div>
+</article>
+
     
         <!-- 文章列表 item -->
 <article class="post">
@@ -275,7 +352,7 @@
     <!--博客js脚本 -->
     <!-- 这里放网站js脚本 -->
 
-<script src="/js/main.js?v=1683124264681.js"></script>
+<script src="/js/main.js?v=1683124645646.js"></script>
 
 
 </body>
