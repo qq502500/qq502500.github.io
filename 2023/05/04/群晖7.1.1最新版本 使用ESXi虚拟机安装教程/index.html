@@ -17,7 +17,7 @@
     <link rel="icon" href="/favicon.ico" >
     
     
-<link rel="stylesheet" href="/css/style.css?v=1683199873924.css">
+<link rel="stylesheet" href="/css/style.css?v=1683202490016.css">
 
     <!--[if lt IE 9]>
     
@@ -116,7 +116,7 @@
         <h3 class="post-title"><span>群晖7.1.1最新版本 使用ESXi虚拟机安装教程</span></h3>
     </header>
     <p class="post-meta text-center">
-        Jelon 发表于
+        epoch_ym 发表于
         <time datetime="2023-05-03T16:00:00.000Z">2023-05-04</time>
     </p>
     <div id="JELON__articlePostContent" class="post-content">
@@ -129,7 +129,7 @@
 <h3 id="4、-配置规格可参考如下图，注意自带的DVD和硬盘都全部删除，点击下一步完成虚拟机的创建。"><a href="#4、-配置规格可参考如下图，注意自带的DVD和硬盘都全部删除，点击下一步完成虚拟机的创建。" class="headerlink" title="4、 配置规格可参考如下图，注意自带的DVD和硬盘都全部删除，点击下一步完成虚拟机的创建。"></a>4、 配置规格可参考如下图，注意自带的DVD和硬盘都全部删除，点击下一步完成虚拟机的创建。</h3><p><img src="https://s2.loli.net/2023/05/04/x4hIMBjHTNKR6Sq.png"></p>
 <h3 id="5、-将下载好的引导文件（连个vmdk文件，一定要都上传）上传至虚拟机的文件夹"><a href="#5、-将下载好的引导文件（连个vmdk文件，一定要都上传）上传至虚拟机的文件夹" class="headerlink" title="5、 将下载好的引导文件（连个vmdk文件，一定要都上传）上传至虚拟机的文件夹"></a>5、 将下载好的引导文件（连个vmdk文件，一定要都上传）上传至虚拟机的文件夹</h3><p>如果存储采用的是vSAN，将会报如下问题，建议使用ESXi上传，或者上传到ESXi本地磁盘。</p>
 <p><img src="https://s2.loli.net/2023/05/04/RseMvmEwX3SPAc9.png"></p>
-<p><img src="https://pics4.baidu.com/feed/f9198618367adab4a31b39e42e37da178501e4b9.png@f_auto?token=f4a9e182a5039f8e4b66d264e1f8ca6d"></p>
+<p><img src="https://s2.loli.net/2023/05/04/XhansVICtvo9mOd.png"></p>
 <h3 id="6、-编辑刚创建的虚拟机，选择现有磁盘，选择上传的arpl-vmdk文件"><a href="#6、-编辑刚创建的虚拟机，选择现有磁盘，选择上传的arpl-vmdk文件" class="headerlink" title="6、 编辑刚创建的虚拟机，选择现有磁盘，选择上传的arpl.vmdk文件"></a>6、 编辑刚创建的虚拟机，选择现有磁盘，选择上传的arpl.vmdk文件</h3><p><img src="https://s2.loli.net/2023/05/04/zXteqoRbOx9cPNB.png"></p>
 <h3 id="7、-注意，挂载磁盘后，需要将控制器改为SATA控制器，如下所示"><a href="#7、-注意，挂载磁盘后，需要将控制器改为SATA控制器，如下所示" class="headerlink" title="7、 注意，挂载磁盘后，需要将控制器改为SATA控制器，如下所示"></a>7、 注意，挂载磁盘后，需要将控制器改为SATA控制器，如下所示</h3><p><img src="https://s2.loli.net/2023/05/04/pXste8kIQY6Ao3F.png"></p>
 <h3 id="8、-添加数据盘，同样也选择SATA控制器，数据盘大小和数量可以根据自己实际需求添加"><a href="#8、-添加数据盘，同样也选择SATA控制器，数据盘大小和数量可以根据自己实际需求添加" class="headerlink" title="8、 添加数据盘，同样也选择SATA控制器，数据盘大小和数量可以根据自己实际需求添加"></a>8、 添加数据盘，同样也选择SATA控制器，数据盘大小和数量可以根据自己实际需求添加</h3><p><img src="https://s2.loli.net/2023/05/04/wXHn6IrQCVYNvlE.png"></p>
@@ -143,7 +143,7 @@
 <p><img src="https://s2.loli.net/2023/05/04/8zoLw4X2Ol9SfuC.png"></p>
 <p><img src="https://s2.loli.net/2023/05/04/DYr8hK2eBLwvtjQ.png"></p>
 <p><img src="https://s2.loli.net/2023/05/04/5pUXQmLFAvhsgr4.png"></p>
-<p><img src="https://pics7.baidu.com/feed/0dd7912397dda144353a8f302754b9a90df48674.png@f_auto?token=54150244331be58e87ae5840cbb12079"></p>
+<p><img src="https://s2.loli.net/2023/05/04/yoPiYS6ZVRwDC9d.png"></p>
 <h3 id="16、-新建浏览器窗口，输入虚拟机的地址（http-ip-5000），进入群晖的配置页面，点击安装"><a href="#16、-新建浏览器窗口，输入虚拟机的地址（http-ip-5000），进入群晖的配置页面，点击安装" class="headerlink" title="16、 新建浏览器窗口，输入虚拟机的地址（http://ip:5000），进入群晖的配置页面，点击安装"></a>16、 新建浏览器窗口，输入虚拟机的地址（<a href="http://ip:5000），进入群晖的配置页面，点击安装">http://ip:5000），进入群晖的配置页面，点击安装</a></h3><p><img src="https://s2.loli.net/2023/05/04/DVGkyxQPzL9COAq.png"></p>
 <h3 id="17、-选择Synology-下载中心，进入群晖官方下载页面"><a href="#17、-选择Synology-下载中心，进入群晖官方下载页面" class="headerlink" title="17、 选择Synology 下载中心，进入群晖官方下载页面"></a>17、 选择Synology 下载中心，进入群晖官方下载页面</h3><p><img src="https://s2.loli.net/2023/05/04/Wy2lx1vdwUJMieo.png"></p>
 <p><img src="https://s2.loli.net/2023/05/04/hGCPieZ9YgkAptO.png"></p>
@@ -312,7 +312,7 @@
     <!--博客js脚本 -->
     <!-- 这里放网站js脚本 -->
 
-<script src="/js/main.js?v=1683199873925.js"></script>
+<script src="/js/main.js?v=1683202490017.js"></script>
 
 
 </body>
